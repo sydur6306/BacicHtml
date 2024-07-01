@@ -3,28 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="description" content="I am a web developer">
+    <meta name="keywords" content="html,web design,portfolio">
+    <!--fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!--fontawesome -->
+    <!--google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    <!--google fonts  -->
     <title>Document</title>
+   <style>
+        body{
+            font-family: "Inter", sans-serif;
+        }
+   </style>
 </head>
 <body>
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="contact.html">Contact</a>
-        <a href="content.html">Content</a>
-        <a href="#header">Header</a>
-        <a href="#content">Content</a>
-        <a href="#about">About</a>
-        <a href="#table">Table</a>
-        <a href="#form">Form</a>
-        <a href="#link">Link</a>
-        <a href="#textformat">Textformat</a>
-    </nav>
+    
     <header id="header">
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="contact.html">Contact</a>
+            <a href="content.html">Content</a>
+            <a href="#header">Header</a>
+            <a href="#content">Content</a>
+            <a href="#about">About</a>
+            <a href="#table">Table</a>
+            <a href="#form">Form</a>
+            <a href="#link">Link</a>
+            <a href="#textformat">Textformat</a>
+        </nav>
         <h1>This is heading section</h1>
         <p>
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam tempora architecto vero exercitationem, iusto delectus vel odio nam eligendi animi voluptate similique quasi tenetur. Eaque, debitis possimus! Vel dolor asperiores tenetur, nisi minima delectus, facere ea deserunt dignissimos omnis consectetur fuga? Praesentium repellendus similique aut id neque impedit sed ab laboriosam officia possimus accusamus quos itaque, sapiente doloremque, quisquam laudantium.
             <a href=""><img src="img/Screenshot (3).png" alt="this is nature pic"width="300"></a>
         </p>
     </header>
+   <main>
     <section id="content">
         <h2>This is content section</h2>
         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Ut rerum minus, temporibus porro accusantium cupiditate ipsum labore, quasi earum sapiente recusandae sit vel. Culpa eaque nisi enim libero quam molestias numquam placeat, eligendi quasi vero ex necessitatibus? Debitis dolore earum, aperiam tempore voluptas nam odio. Repellendus facilis aliquam ad reprehenderit, qui animi tempore minima et harum expedita cumque mollitia corporis eligendi quae eius debitis nobis veniam assumenda. Molestiae, minus. Consequuntur unde, quasi vitae eaque doloremque sequi mollitia, nam assumenda dolorum illo tempora voluptatibus cupiditate quaerat. Cupiditate doloremque reiciendis recusandae cum? Possimus, alias adipisci iusto ipsa saepe autem dolorum assumenda eos?</p>
@@ -70,9 +88,14 @@
         <a href="tel:01918511452">Call me</a><br>
         <a href="mailto:khsydur@gmail.com">Mail me</a>
     </section>
+    <video width="400"controls>
+        <source src="video/Eso Arbi Shikho_01.mp4"type="video/mp4">
+    </video><br>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3614.622748087084!2d90.02071202443625!3d25.046873637774773!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3757d7b4ab5c6035%3A0x6a73d6caa1ae6ef4!2sTatalpur%20Bazar%2C%20R460%2C%20Sherpur!5e0!3m2!1sen!2sbd!4v1719848628889!5m2!1sen!2sbd" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     <section id="form">
         <h2>This is form section</h2>
-        <form action="">
+        <form action="https://formspree.io/f/xblrjdgz"
+        method="POST">
             <div>
                 <label for="name">Name</label>
                 <input type="text"name="name"id="name"required>
@@ -82,6 +105,29 @@
                 <input type="email"name="email"id="email"required>
             </div>
             <div>
+                <label for="age">Age</label>
+                <input type="number"name="age"id="age"min="18"max="55">
+            </div>
+            <div>
+                <label for="website">Website :</label>
+                <input type="url" name="website" id="website"pattern="https?://.+">
+            </div>
+            <div>
+                <label for="image">
+                    <input type="file"name="ïmage"id="image"accept="image/*">
+                </label>
+            </div>
+            
+            <div>
+                <label for="subject">Subject :</label>
+                <select name="subject" id="subject">
+                    <option value="Bangla">Bangla</option> 
+                    <option value="English">English</option> 
+                    <option value="Mathematics">Mathematics</option> 
+                    <option value="Physics">Physics</option> 
+                    <option value="Chemestry">Chemestry</option> 
+                </select>
+            </div>            <div>
                 <label for="message">Message</label>
                 <textarea name="message" id="message"required></textarea>
             </div>
@@ -104,18 +150,16 @@
             <tbody>
                 <tr>
                     <td>Sydur Rahman</td>
-                    <td>630690</td>
+                    <td rowspan="2">630690</td>
                     <td>533755</td>
                 </tr>
                 <tr>
                     <td>Sydur Rahman</td>
-                    <td>630690</td>
                     <td>533755</td>
                 </tr>
                 <tr>
                     <td>Sydur Rahman</td>
-                    <td>630690</td>
-                    <td>533755</td>
+                    <td colspan="2">630690</td>
                 </tr>
                 <tr>
                     <td>Sydur Rahman</td>
@@ -124,10 +168,61 @@
                 </tr>
             </tbody>
         </table>
+        <h2>Skill Progress</h2>
+       <div>
+        <div>
+            <label for="htmlprogress">HTML</label>
+            <progress id="htmlprogress"value="90"max="100">90%</progress>
+        </div>
+        
+        <div>
+            <label for="cssprogress">CSS</label>
+            <progress id="cssprogress"value="85"max="100">85%</progress>
+        </div>
+        <div>
+            <label for="javaprogress">JAVA</label>
+            <progress id="javaprogress"value="70"max="100">70%</progress>
+        </div>
+       </div>
+    <div>
+        <h2>Experience Level</h2>
+        <div>
+            <label for="experience"></label>
+            <meter max="10" value="5"id="experience">5 Years</meter>
+        </div>
+        <div>
+            <label for="experience"></label>
+            <meter max="10" value="8"id="experience">5 Years</meter>
+        </div>
+    </div>
     </section>
+   </main>
     <footer id="footer">
         <h2>This is footer section</h2>
         <p>&copy;Created by Khandakar Sydur Rahman</p>
+        <ul>
+            
+                <li>
+                    <a href="https://facebook.com" target="_blank">
+                    <i class="fa-brands fa-facebook-f"></i>
+                        visit facebook
+                    </a>
+                </li>
+             
+                <li>
+                    <a href="https://youtube.com" target="_blank">
+                    <i class="fa-brands fa-youtube"></i>
+                        visit youtube
+                    </a>
+                </li>
+                <li>
+                    <a href="https://linkedin.com" target="_blank">
+                    <i class="fa-brands fa-linkedin"></i>
+                        visit linkedin
+                    </a>
+                </li>
+        </ul>
+        
     </footer>
 </body>
 </html>
